@@ -3,7 +3,7 @@ oauth: pages.sr.ht/PAGES:RW
 packages:
 - hut
 environment:
-  site: mysticmode.srht.site
+  site: river.sh
 tasks:
 - package: |
     cd $site
