@@ -1,4 +1,4 @@
-# tildezero.net
+# river.sh
 
 This is a static website and can be run through any static site server.
 
