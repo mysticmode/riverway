@@ -1,108 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="/static/img/favicon.png">
     <title>Riverway - A software boutique</title>
-    <link rel="shorcut icon" type="image/png"
-        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF4SURBVHgB7Zj/jURQEMfH5f7cLWC3gG1AAwqgAA1QgAYoQAEUQAEUQAEKoAAK4P+7+74ccbJ7e/Eum4nMJ5H48cT7mJk3wTBN84MOwBsdBBHhhohwQ0S4ISLcEBFuiAg3RIQbhxF5p3/gfD6T67rkOA5dLhd1rus6yrKMyrJ8eu/pdFL70zTROI60B0P3C/F6vVKSJIvAlr7vyfd9Gobh7nXP89QGmqZRY/eglVrPJOYxiIxt23ev3263ZX9vNIBWan1F84dEURRU17WaENJsnjzSJwxDJZWm6TIex5ZlLceIyF60RNZvGRJRFNF6Um3bUhAEyzmkEO6BLOpiLQGqqqK9aIms0wKT25LnuRKK43iJHKKAhWELIvWojv6CVo1glcHDsT3Kb6xeKODfVi9IrFNuD8Yr/2uhppBOiA7EIQlBnSKfMY7yg04a4ow0xG+kIW6QhgikIW6QhrjiMA1Rvtm5ISLcEBFuiAg3RIQbIsINEeHGYUQ+AbWJ/va1HA5qAAAAAElFTkSuQmCC">
     <style>
-        :root {
-            --bg: #fff;
-            --fg: #333;
-            --alt: #b7b7b7;
-        }
+      @font-face {
+        font-family: 'Poppins Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Poppins Regular'), url('Poppins-Regular.woff') format('woff');
+      }
 
-        @font-face {
-            font-family: 'JetBrains Mono';
-            font-style: normal;
-            font-weight: normal;
-            src: local('JetBrains Mono Regular'), url('/fonts/jetbrains-mono/JetBrainsMonoRegular.woff2') format('woff');
-            font-display: swap;
-        }
+      * {
+        box-sizing: border-box;
+      }
 
-        body {
-            font-size: 14px;
-            line-height: 1.5;
-            text-rendering: optimizeLegibility;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            padding: 0 2em;
-            margin: 3em auto;
-            background-color: var(--bg);
-            color: var(--fg);
-            font-family: 'JetBrains Mono', monospace;
-            letter-spacing: -.02em;
-            max-width: 590px;
-        }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
 
-        a,
-        a:visited {
-            color: var(--fg);
-            text-underline-offset: .25em;
-            text-decoration-thickness: 1px
-        }
+      body {
+        width: 960px;
+        font-family: 'Poppins Regular', sans-serif;
+        font-size: 26px;
+        font-weight: normal;
+        color: #333;
+        margin: 0 auto;
+        padding: 20px 20px 30px;
+      }
 
-        ul {
-            list-style-type: square;
-        }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
 
-        li::marker {
-            color: var(--alt);
-        }
+      .header,
+      .header a {
+        display: flex;
+        align-items: center;
+      }
 
-        .title {
-            display: flex;
-            margin-top: 2.5em;
-            margin-bottom: .4em;
-        }
+      .header {
+        justify-content: space-between;
+      }
 
-        .logo {
-            display: flex;
-            align-items: center;
-        }
+      .header a div {
+        margin-left: 10px;
+      }
 
-        .logo span {
-            display: flex;
-            line-height: 0.25em;
-            font-size: 20px;
-            color: var(--alt);
-            margin-right: 0.2em;
-        }
+      .header .tagline {
+        font-size: 21px;
+        color: #666;
+      }
 
-        footer {
-            margin: 3em 0 0;
-            color: var(--alt);
-        }
+      .moto {
+        text-align: center;
+        margin: 50px auto;
+      }
+
+      .moto div {
+        display: inline-block;
+        margin: 0 auto;
+        padding: 7px 0;
+        border-top: 2px solid #333;
+        border-bottom: 2px solid #333;
+      }
+
+      .section {
+        margin-bottom: 50px;
+      }
+
+      .section .title {
+        font-size: 21px;
+        color: #666;
+      }
+
+      .section p {
+        margin-top: 10px;
+      }
+
+      .section span {
+        font-size: 21px;
+        color: #666;
+      }
+
+      .footer {
+        font-size: 16px;
+        color: #666;
+      }
     </style>
-</head>
-
-<body>
-    <div class="logo">
-        <div>
-            <span>~</span>
-            <span>~</span>
-        </div>
+  </head>
+  <body>
+    
+    <header class="header">
+      <a href="/">
+        <img src="/static/img/favicon.svg">
         <div>Riverway</div>
+      </a>
+     
+     <div class="tagline">Free/Libre software development boutique.</div>
+    </header>
+
+    <div class="moto">
+      <div>We strive for clarity, consistency and excellence in software development</div>
     </div>
-    <p>List of softwares and utilities from <a href="https://tildezero.net/">Nirmal Kumar R</a>.</p>
-    <ul>
-        <li>
-            <span>[</span><a href="https://quickwrite.river.sh">quickwrite</a><span>]</span>
-            <p>A browser-based local storage writer.</p>
-        </li>
-        <li>
-            <span>[</span><a href="https://emptyfm.river.sh">emptyfm</a><span>]</span>
-            <p>Listen to your favorite FM Radio station from your browser.</p>
-        </li>
-        <li>
-            <span>[</span><a href="https://github.com/mysticmode/emptyfm-cli">emptyfm-cli</a><span>]</span>
-            <p>Listen to your favorite FM Radio station from your terminal.</p>
-        </li>
-    </ul>
 
-    <footer>&#169; 2024 Nirmal Kumar R</footer>
-</body>
+    <section class="section">
+      <div class="title">Expertise</div>
+      <p>Over ten years of industry experience in software engineering and management—Riverway can deliver. We provide solutions for systems programming, web development and understanding the nuances of every detail in whatever we do.</p>
+    </section>
+    
+    <section class="section">
+      <div class="title">Open DNA</div>
+      <p>Our source of truth is that a software must be open by design and has a transparent team in making decisions. This is what we do with our existing products. We nurture each and every step of the process to a great care and believe that the effort that we put in is worth a satisfaction of our daily life.</p>
+    </section>
 
+    <section class="section">
+      <div class="title">Get in touch</div>
+      <p>Our team members are located in India and Denmark. If you have any queries, do not hesitate and feel free to get in touch.</p>
+      <span>tildezero [at] gmail [dot] com</span>
+    </section>
+
+    <footer class="footer">
+      <hr>
+      Copyright © 2024 Nirmal Kumar R
+    </footer>
+  </body>
 </html>
