@@ -18,18 +18,21 @@
       }
 
       body {
-        width: 960px;
+        width: 840px;
         font-family: sans-serif;
-        font-size: 21px;
+        font-size: 19px;
         font-weight: normal;
         color: #333;
-        margin: 0 auto;
+        margin: 0;
         padding: 20px 20px 30px;
       }
 
       a {
-        text-decoration: none;
-        color: inherit;
+        color: #BF1717;
+      }
+
+      ul {
+        list-style-type: square;
       }
 
       .header,
@@ -39,6 +42,7 @@
       }
 
       .header {
+        margin-bottom: 2em;
         justify-content: space-between;
       }
 
@@ -57,24 +61,16 @@
 	    margin-right: 20px;
       }
 
-      .moto {
-        text-align: center;
-        margin: 50px auto;
-      }
-
-      .moto div {
-        display: inline-block;
-        margin: 0 auto;
-        padding: 7px 0;
-        border-top: 2px solid #BF1717;
-        border-bottom: 2px solid #BF1717;
-      }
-
       .section {
-        margin-bottom: 50px;
+        margin-bottom: 1em;
       }
 
-      .section .title,
+      .section .title {
+        font-size: 1.1rem;
+        font-weight: bold;
+        border-bottom: 1px solid #BF1717;
+      }
+
       .section span{
         font-size: 1.1rem;
         color: #BF1717;
@@ -85,14 +81,13 @@
       }
 
       .footer {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         color: #666;
+        padding-top: 10px;
+        margin-bottom: 20px;
+        border-top: 1px solid #BF1717;
       }
 
-      .footer hr {
-        color: #BF1717;
-      }
-      
       @media screen and (max-width: 980px) {
         body {
           width: 100%;
@@ -119,7 +114,7 @@
     
     <header class="header">
       <a href="/">
-        <img src="/static/img/riverway-logo.png" height="82px">
+        <img src="/static/img/riverway-logo.png" height="70px">
       </a>
      
       <div class="nav">
@@ -128,28 +123,61 @@
       </div>
     </header>
 
-    <div class="moto">
-      <div>We strive for clarity, consistency and excellence in software development</div>
-    </div>
+    <section class="section">
+      Welcome to Riverway website. Riverway is a software development
+      boutique, focusing on developing and engaging with "Free" software
+      development.
+    </section>
 
     <section class="section">
-      <div class="title">Expertise</div>
-      <p>Over ten years of industry experience in software engineering and management—Riverway can deliver. We provide solutions for systems programming, web development and understanding the nuances of every detail in whatever we do.</p>
+      <div class="title">Our culture</div>
+      <p>
+        Our source of truth is that a software must be open by design and
+        has a transparent team in making decisions. This is what we do
+        with our existing projects. We nurture each and every step of the
+        development decisions and process to a great care.
+      </p>
     </section>
     
     <section class="section">
-      <div class="title">Open DNA</div>
-      <p>Our source of truth is that a software must be open by design and has a transparent team in making decisions. This is what we do with our existing products. We nurture each and every step of the process to a great care and believe that the effort that we put in is worth a satisfaction of our daily life.</p>
+      <div class="title">What you need to know</div>
+      <p>
+        We are opinionated in our technological stack. That means, we are
+        well-versed in our skill-set and we know how to tackle the problem
+        with each and every bit of our expertise. We carefully chose the
+        tech-stack and we know what we are doing.
+
+        <ul>
+            <li>C</li>
+            <li>Go</li>
+            <li>SQL with Postgres</li>
+            <li>Vanilla Javascript</li>
+            <li>HTML5 and CSS3</li>
+        </ul>
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="title">What we need from you</div>
+      <p>
+        The output should be 100% free software, as defined by the
+        <a href="https://www.gnu.org/licenses/license-list.html">Free
+        Software Foundation</a>. The code we write should be published
+        as "Free" softwares and the collaboration has to be done in
+        public issue trackers, mailing lists, and so on. We do not
+        sign non-disclosure agreements.
+      </p>
     </section>
 
     <section class="section">
       <div class="title">Get in touch</div>
-      <p>Our team members are located in India and Denmark. If you have any queries, do not hesitate and feel free to get in touch.</p>
+      <p>
+        If you have any question, you can email us:
+      </p>
       <span>riverway [at] posteo [dot] net</span>
     </section>
 
     <footer class="footer">
-      <hr>
       Copyright © 2024 Nirmal Kumar R
     </footer>
   </body>
