@@ -7,13 +7,6 @@
     <link rel="icon" type="image/png" href="/static/img/favicon.png">
     <title>Riverway - A software boutique</title>
     <style>  
-      @font-face {
-        font-family: 'Poppins Regular';
-        font-style: normal;
-        font-weight: normal;
-        src: local('Poppins Regular'), url('/static/font/Poppins-Regular.woff') format('woff');
-      }
-
       * {
         box-sizing: border-box;
       }
@@ -26,8 +19,8 @@
 
       body {
         width: 960px;
-        font-family: 'Poppins Regular', sans-serif;
-        font-size: 25px;
+        font-family: sans-serif;
+        font-size: 21px;
         font-weight: normal;
         color: #333;
         margin: 0 auto;
@@ -54,14 +47,14 @@
       }
 
       .header .nav {
-	display: flex;
-	font-size: 1.3rem;
-        color: #15C;
-	text-decoration: underline;
+	    display: flex;
+	    font-size: 1.1rem;
+        color: #BF1717;
+	    text-decoration: underline;
       }
 
       .header .nav a:first-child {
-	margin-right: 20px;
+	    margin-right: 20px;
       }
 
       .moto {
@@ -73,8 +66,8 @@
         display: inline-block;
         margin: 0 auto;
         padding: 7px 0;
-        border-top: 2px solid #333;
-        border-bottom: 2px solid #333;
+        border-top: 2px solid #BF1717;
+        border-bottom: 2px solid #BF1717;
       }
 
       .section {
@@ -83,8 +76,8 @@
 
       .section .title,
       .section span{
-        font-size: 1.3rem;
-        color: #666;
+        font-size: 1.1rem;
+        color: #BF1717;
       }
 
       .section p {
@@ -92,14 +85,18 @@
       }
 
       .footer {
-        font-size: 1rem;
+        font-size: 0.7rem;
         color: #666;
       }
       
       @media screen and (max-width: 980px) {
         body {
           width: 100%;
-          font-size: 22px;
+          font-size: 19px;
+        }
+
+        .header .nav {
+            margin-top: 1.5em;
         }
       }
 
@@ -118,13 +115,14 @@
     
     <header class="header">
       <a href="/">
-        <img src="/static/img/favicon.svg">
-        <div>Riverway</div>
+        <!--<img src="/static/img/favicon.svg">
+        <div>Riverway</div>-->
+        <img src="/static/img/riverway-logo.png" height="82px">
       </a>
      
       <div class="nav">
-	<a href="https://blog.river.sh">Blog</a>
-	<a href="https://git.river.sh">Repositories</a>
+	    <a href="https://blog.river.sh">Blog</a>
+	    <a href="https://git.river.sh">Repositories</a>
       </div>
     </header>
 
