@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" href="/static/img/favicon.png">
-    <title>Riverway - A software boutique</title>
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <title>Riverway - Nirmal Kumar's software boutique</title>
     <style>  
+      @font-face {
+	font-family: 'riverfont';
+	src: url('/font/WorkSans-Regular.woff2');
+	font-display: block;
+      }
+
+      @font-face {
+	font-family: 'riverfont';
+	src: url('/font/WorkSans-Bold.woff2');
+	font-weight: bold;
+	font-display: block;
+      }
+
       * {
         box-sizing: border-box;
       }
@@ -18,17 +31,17 @@
       }
 
       body {
-        width: 730px;
-        font-family: sans-serif;
+        width: 620px;
+        font-family: 'riverfont', sans-serif;
         font-size: 17px;
         font-weight: normal;
-        color: #333;
-        margin: 0;
+        color: #444;
+        margin: 0 auto;
         padding: 20px 20px 30px;
       }
 
       a {
-        color: #BF1717;
+        color: #15c; 
       }
 
       ul {
@@ -55,19 +68,7 @@
       }
 
       .header .nav a:first-child {
-	    margin-right: 0.5em;
-      }
-
-      .header .nav a {
-        background-color: #BF1717;
-        color: white;
-        padding: 0.2em 0.5em;
-        text-decoration: none;
-        box-shadow: 1px 2px 2px #dfb7b7 inset;
-        border-bottom: 4px solid #992727;
-        border-right: 3px solid #f29595;
-        border-left: 2px solid #b77272;
-        border-top: 1px solid #ac3e3e;
+	    margin-right: 1em;
       }
 
       .section {
@@ -77,12 +78,11 @@
       .section .title {
         font-size: 1.1rem;
         font-weight: bold;
-        border-bottom: 1px solid #BF1717;
+        border-bottom: 1px solid #15c;
       }
 
-      .section span{
-        font-size: 1.1rem;
-        color: #BF1717;
+      .section span {
+        font-weight: bold;
       }
 
       .section p {
@@ -94,7 +94,7 @@
         color: #666;
         padding-top: 10px;
         margin-bottom: 20px;
-        border-top: 1px solid #BF1717;
+        border-top: 1px solid #15c;
       }
 
       @media screen and (max-width: 730px) {
@@ -116,17 +116,17 @@
     
     <header class="header">
       <a href="/">
-        <img src="/static/img/riverway-logo.png" height="62px">
+        <img src="/img/logo.svg" />
       </a>
      
       <div class="nav">
 	    <a href="https://blog.river.sh">Blog</a>
-	    <a href="https://git.river.sh">Repositories</a>
+	    <a href="https://github.com/riversrc">Repositories</a>
       </div>
     </header>
 
     <section class="section">
-      Welcome to Riverway website. Riverway is a software development
+      Welcome to Riverway website. Riverway is a <a href="https://nirm.al">Nirmal Kumar's</a> software development
       boutique, focusing on developing and engaging with "Free" software
       development.
     </section>
